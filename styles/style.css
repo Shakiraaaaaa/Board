@@ -1,0 +1,224 @@
+.containerr
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+header
+{
+    width: 1440px;
+height: 94px;
+left: 0px;
+top: 0px;
+
+background: #562EFF;
+}
+
+.navigation img{
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:  white;
+    
+    
+}
+
+.icon
+{
+    left: 19.79%;
+    right: 77.4%;
+    top: 2.13%;
+    bottom: 93.69%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    
+    color:black;
+    margin-top: 5px;
+    
+}
+
+.navigation
+{
+    display: flex;
+    font-size: 20px;
+line-height: 24px;
+}
+
+.navigation li
+{
+    list-style: none;
+    margin: 10px;
+    
+    
+}
+
+.navigation li a
+{
+    text-decoration: none;
+    color: #ffff;
+}
+
+.container
+{
+    width: 870px;
+    background-color:  #f7eeee;
+    
+    padding: 30px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+}
+
+main
+{
+    display: flex;
+    justify-content: center;
+}
+
+.players img
+{ 
+width: 56px;
+height: 56px;
+border-radius: 50%;
+
+}
+
+.players
+{
+
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-row-gap: 30px;
+  justify-content: center;
+
+
+}
+
+.player
+{
+    display: inline-flex;
+    align-items: center;
+   
+}
+
+hr
+{
+    border: 2px solid blueviolet;
+}
+
+.thumbnail img
+{
+    width: 177px;
+    height: 117px;
+}
+
+.blog
+{
+
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-row-gap: 30px;
+  justify-content: center;
+
+
+}
+
+.course-banner img
+{
+    width: 224px;
+height: 104px;
+}
+
+.fa-star.filled
+{
+    color: yellow;
+}
+
+.fa-star.empty
+{
+    color: #A2A2A2;
+}
+
+.author
+{
+    color: #ED6B4F;
+}
+
+.course-info
+{
+    display: flex;
+    align-items: center;
+}
+
+.course-duration
+{
+    margin-left: 5px;
+    color: #ED6B4F;
+
+
+}
+
+.time
+{
+    margin-left: 60px;
+}
+
+.courses
+{
+
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-row-gap: 30px;
+  justify-content: center;
+  grid-column-gap: 24px;
+
+
+}
+
+@media screen and (max-width:688px){
+
+    .container{
+        width: 100%;
+    }
+    .players,.blog,.courses
+    {
+        background-color: lightseagreen;
+        grid-template-columns: repeat(1,1fr);
+       
+    }
+
+    .player,.blog
+    {
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (min-width:688px) and (max-width:992px) {
+
+    .container
+    {
+        width: 100%;
+    }
+
+    .players
+    {
+        background-color: lightgreen;
+        grid-template-columns: repeat(2,1fr);
+       
+    }
+
+    .blog,.courses
+    {
+        background-color: lightgreen;
+        grid-template-columns: repeat(2,1fr);
+       
+    }
+}
